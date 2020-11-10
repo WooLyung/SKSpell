@@ -8,8 +8,6 @@ import org.bukkit.event.Event;
 import woolyung.skspell.SKSpell;
 import woolyung.skspell.elements.types.SpellSeed;
 
-import java.security.acl.Owner;
-
 public class ExprPropSpellSeedOwner extends SimplePropertyExpression<SpellSeed, Entity> {
 
     static {

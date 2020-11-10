@@ -6,7 +6,7 @@
 
     <groupId>WooLyung</groupId>
     <artifactId>SKSpell</artifactId>
-    <version>beta 1.0.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>SKSpell</name>

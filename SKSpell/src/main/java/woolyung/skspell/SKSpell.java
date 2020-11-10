@@ -24,12 +24,12 @@ public final class SKSpell extends JavaPlugin {
             e.printStackTrace();
         }
 
-        getServer().getLogger().info("SKSpell beta 1.0.0 has been enabled.");
+        getServer().getLogger().info("SKSpell 1.0.0 has been enabled.");
     }
 
     @Override
     public void onDisable() {
-        getServer().getLogger().info("SKSpell beta 1.0.0 has been disabled.");
+        getServer().getLogger().info("SKSpell 1.0.0 has been disabled.");
     }
 
     public static SKSpell getPlugin() {

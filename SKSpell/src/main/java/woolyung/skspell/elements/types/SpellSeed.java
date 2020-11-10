@@ -1,13 +1,21 @@
 package woolyung.skspell.elements.types;
 
+import ch.njol.util.VectorMath;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
+import org.bukkit.util.Vector;
+
+import java.util.HashMap;
 
 public class SpellSeed {
 
     private String name;
     private Entity owner;
     private Location location;
+    private HashMap<String, Integer> intProps = new HashMap<>();
+    private HashMap<String, Double> numProps = new HashMap<>();
+    private HashMap<String, String> strProps = new HashMap<>();
+    private HashMap<String, Vector> vecProps = new HashMap<>();
     private double time = 0;
 
     public static String getDefaultName() {
@@ -52,5 +60,73 @@ public class SpellSeed {
 
     public String getString() {
         return "spell seed named \"" + name + "\"";
+    }
+
+    public Integer getIntProp(String key) {
+        if (intProps.containsKey(key))
+            return intProps.get(key);
+        return null;
+    }
+
+    public Double getNumProp(String key) {
+        if (numProps.containsKey(key))
+            return numProps.get(key);
+        return null;
+    }
+
+    public String getStrProp(String key) {
+        if (strProps.containsKey(key))
+            return strProps.get(key);
+        return null;
+    }
+
+    public Vector getVecProp(String key) {
+        if (vecProps.containsKey(key))
+            return vecProps.get(key);
+        return null;
+    }
+
+    public void setIntProps(String key, int value) {
+        if (intProps.containsKey(key))
+            intProps.remove(key);
+        intProps.put(key, value);
+    }
+
+    public void setNumProps(String key, double value) {
+        if (numProps.containsKey(key))
+            numProps.remove(key);
+        numProps.put(key, value);
+    }
+
+    public void setStrProps(String key, String value) {
+        if (strProps.containsKey(key))
+            strProps.remove(key);
+        strProps.put(key, value);
+    }
+
+    public void setVecProps(String key, Vector value) {
+        if (vecProps.containsKey(key))
+            vecProps.remove(key);
+        vecProps.put(key, value.clone());
+    }
+
+    public void deleteIntProps(String key) {
+        if (intProps.containsKey(key))
+            intProps.remove(key);
+    }
+
+    public void deleteNumProps(String key) {
+        if (numProps.containsKey(key))
+            numProps.remove(key);
+    }
+
+    public void deleteStrProps(String key) {
+        if (strProps.containsKey(key))
+            strProps.remove(key);
+    }
+
+    public void deleteVecProps(String key) {
+        if (vecProps.containsKey(key))
+            vecProps.remove(key);
     }
 }
