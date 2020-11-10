@@ -1,0 +1,7 @@
+name: SKSpell
+version: ${project.version}
+main: woolyung.skspell.SKSpell
+depend: [Skript]
+authors: [WooLyung]
+description: simple spell creator addon for skript.
+website: github.com/WooLyung/

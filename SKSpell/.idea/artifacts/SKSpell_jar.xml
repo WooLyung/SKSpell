@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SKSpell:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SKSpell_jar</output-path>
+    <root id="archive" name="SKSpell.jar">
+      <element id="module-output" name="SKSpell" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../library/Skript.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
