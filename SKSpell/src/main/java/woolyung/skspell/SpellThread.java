@@ -20,6 +20,7 @@ public class SpellThread extends Thread {
                         SpellUpdateEvent event = new SpellUpdateEvent(spellSeed);
                         Bukkit.getPluginManager().callEvent(event);
                     }
+                    plugin.getSSManager().removeSpellSeeds();
                 });
             } catch (Exception e) {
                 e.printStackTrace();

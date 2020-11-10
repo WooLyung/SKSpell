@@ -11,7 +11,7 @@ import woolyung.skspell.elements.types.SpellSeed;
 public class EffSpellSeedIntDel extends Effect {
 
     static {
-        Skript.registerEffect(EffSpellSeedIntDel.class, "del[ete] int[eger] property %string% in %spell%");
+        Skript.registerEffect(EffSpellSeedIntDel.class, "(del[ete]|remove) int[eger] property %string% in %spell%");
     }
 
     private Expression<String> key;

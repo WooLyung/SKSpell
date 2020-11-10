@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class SpellSeedManager {
     private ArrayList<SpellSeed> spellSeeds = new ArrayList<>();
+    private ArrayList<SpellSeed> removes = new ArrayList<>();
 
     public ArrayList<SpellSeed> getSpellSeeds() {
         return spellSeeds;
@@ -23,6 +24,13 @@ public class SpellSeedManager {
     }
 
     public void removeSpellSeed(SpellSeed spellSeed) {
-        spellSeeds.remove(spellSeed);
+        removes.add(spellSeed);
+    }
+
+    public void removeSpellSeeds() {
+        for (SpellSeed spellSeed : removes) {
+            spellSeeds.remove(spellSeed);
+        }
+        removes.clear();
     }
 }

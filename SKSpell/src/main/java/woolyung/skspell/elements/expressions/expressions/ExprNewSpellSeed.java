@@ -13,7 +13,7 @@ import woolyung.skspell.elements.types.SpellSeed;
 public class ExprNewSpellSeed extends SimpleExpression<SpellSeed> {
 
     static {
-        Skript.registerExpression(ExprNewSpellSeed.class, SpellSeed.class, ExpressionType.COMBINED, "[(new|create|summon)] spell seed");
+        Skript.registerExpression(ExprNewSpellSeed.class, SpellSeed.class, ExpressionType.COMBINED, "(new|create|summon) spell [seed]");
     }
 
     @Override
@@ -36,7 +36,7 @@ public class ExprNewSpellSeed extends SimpleExpression<SpellSeed> {
 
     @Override
     public String toString(Event event, boolean b) {
-        return "new spell seed";
+        return "delete spell seed";
     }
 
     @Override

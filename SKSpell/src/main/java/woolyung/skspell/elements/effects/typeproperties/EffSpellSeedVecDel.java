@@ -11,7 +11,7 @@ import woolyung.skspell.elements.types.SpellSeed;
 public class EffSpellSeedVecDel extends Effect {
 
     static {
-        Skript.registerEffect(EffSpellSeedVecDel.class, "del[ete] vec[tor] property %string% in %spell%");
+        Skript.registerEffect(EffSpellSeedVecDel.class, "(del[ete]|remove) vec[tor] property %string% in %spell%");
     }
 
     private Expression<String> key;
