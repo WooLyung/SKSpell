@@ -26,7 +26,7 @@ public class ExprSpellSeedVecGet extends SimpleExpression<Vector> {
         if (seed == null) return null;
 
         Vector[] vectors = new Vector[1];
-        vectors[0] = seed.getVecProp(stringExpression.getSingle(event));
+        vectors[0] = seed.getVecProps(stringExpression.getSingle(event));
         return vectors;
     }
 

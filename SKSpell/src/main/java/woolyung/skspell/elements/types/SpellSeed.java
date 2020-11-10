@@ -16,6 +16,7 @@ public class SpellSeed {
     private HashMap<String, Double> numProps = new HashMap<>();
     private HashMap<String, String> strProps = new HashMap<>();
     private HashMap<String, Vector> vecProps = new HashMap<>();
+    private HashMap<String, Entity> entityProps = new HashMap<>();
     private double time = 0;
 
     public static String getDefaultName() {
@@ -62,27 +63,33 @@ public class SpellSeed {
         return "spell seed named \"" + name + "\"";
     }
 
-    public Integer getIntProp(String key) {
+    public Integer getIntProps(String key) {
         if (intProps.containsKey(key))
             return intProps.get(key);
         return null;
     }
 
-    public Double getNumProp(String key) {
+    public Double getNumProps(String key) {
         if (numProps.containsKey(key))
             return numProps.get(key);
         return null;
     }
 
-    public String getStrProp(String key) {
+    public String getStrProps(String key) {
         if (strProps.containsKey(key))
             return strProps.get(key);
         return null;
     }
 
-    public Vector getVecProp(String key) {
+    public Vector getVecProps(String key) {
         if (vecProps.containsKey(key))
             return vecProps.get(key);
+        return null;
+    }
+
+    public Entity getEntityProps(String key) {
+        if (entityProps.containsKey(key))
+            return entityProps.get(key);
         return null;
     }
 
@@ -110,6 +117,12 @@ public class SpellSeed {
         vecProps.put(key, value.clone());
     }
 
+    public void setEntityProps(String key, Entity value) {
+        if (entityProps.containsKey(key))
+            entityProps.remove(key);
+        entityProps.put(key, value);
+    }
+
     public void deleteIntProps(String key) {
         if (intProps.containsKey(key))
             intProps.remove(key);
@@ -128,5 +141,10 @@ public class SpellSeed {
     public void deleteVecProps(String key) {
         if (vecProps.containsKey(key))
             vecProps.remove(key);
+    }
+
+    public void deleteEntityProps(String key) {
+        if (entityProps.containsKey(key))
+            entityProps.remove(key);
     }
 }

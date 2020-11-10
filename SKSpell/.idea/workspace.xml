@@ -7,19 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="446981ba-5326-4164-b3bf-2e3cdb4e165a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellSeedManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntityDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntitySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedNumDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/events/EvtSpellUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprDelSpellSeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedEntityGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/events/SpellUpdateEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,27 +46,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="25" />
+          <entry key="java" value="44" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="44" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="17" />
-          <entry key="java" value="3891" />
+          <entry key="dummy" value="32" />
+          <entry key="java" value="5670" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3891" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="JAVA" value="5670" />
+          <entry key="PLAIN_TEXT" value="32" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -68,44 +75,58 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecDel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="119" column="33" lean-forward="true" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+            <state relative-caret-position="396">
+              <caret line="25" column="5" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntityDel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/events/EvtSpellUpdate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#683#871#0" expanded="true" />
                 <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedOwner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="399">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,104 +135,87 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellSeedManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="36" column="13" lean-forward="true" selection-end-line="59" />
+            <state relative-caret-position="475">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprDelSpellSeed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="14" column="113" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="45" lean-forward="true" selection-end-line="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedNumSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecSet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="472">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedEntityGet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/events/SpellUpdateEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -257,7 +261,6 @@
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/ExprSetSpellSeedName.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/ExprSetSpellSeedOwner.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/ExprSetSpellSeedLoc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/setters/ExprSetSpellSeedOwner.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/setters/ExprSetSpellSeedName.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedName.java" />
@@ -265,19 +268,32 @@
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedLoc.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/setters/ExprSetSpellSeedLoc.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedInt.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/properties/ExprPropSpellSeedOwner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedNumSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedEntityGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntDel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntitySet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrDel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedNumDel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecDel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntityDel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/events/SpellUpdateEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/events/SpellUpdateEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/events/EvtSpellUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellSeedManager.java" />
       </list>
     </option>
   </component>
@@ -289,7 +305,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -358,6 +374,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SKSpell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SKSpell" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="expressions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -396,6 +420,14 @@
               <item name="SKSpell" type="b2602c69:ProjectViewProjectNode" />
               <item name="SKSpell" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SKSpell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SKSpell" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -406,8 +438,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605002870779" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SKServal/project" />
+    <property name="SearchEverywhereHistoryKey" value="new SpellSeed&#9;PSI&#9;JAVA://woolyung.skspell.elements.expressions.expressions.ExprNewSpellSeed" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605007107246" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mineplanet plot" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -467,7 +500,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -645,62 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="119" column="33" lean-forward="true" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,28 +691,6 @@
           <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="36" column="13" lean-forward="true" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,8 +709,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedNumGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="113" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
+        <state relative-caret-position="342">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedIntGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="48" column="13" lean-forward="true" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedStrGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="45" lean-forward="true" selection-end-line="59" />
+        <state relative-caret-position="342">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -770,18 +739,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedVecGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="646">
+          <caret line="44" column="9" selection-end-line="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="26" column="9" lean-forward="true" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="361">
+          <caret line="22" column="44" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#422#423#0" expanded="true" />
@@ -790,14 +783,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntitySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="532">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedIntDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="18" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedNumDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedStrDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="26" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/types/SpellSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedVecDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="5" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/effects/typeproperties/EffSpellSeedEntityDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/typeproperties/ExprSpellSeedEntityGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/events/SpellUpdateEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SKSpell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/events/EvtSpellUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#683#871#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/SpellSeedManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprDelSpellSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/woolyung/skspell/elements/expressions/expressions/ExprNewSpellSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -25,7 +25,7 @@ public class ExprSpellSeedIntGet extends SimpleExpression<Integer> {
         if (seed == null) return null;
 
         Integer[] integers = new Integer[1];
-        integers[0] = seed.getIntProp(stringExpression.getSingle(event));
+        integers[0] = seed.getIntProps(stringExpression.getSingle(event));
         return integers;
     }
 

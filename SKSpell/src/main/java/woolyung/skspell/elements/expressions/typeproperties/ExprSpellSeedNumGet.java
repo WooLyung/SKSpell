@@ -25,7 +25,7 @@ public class ExprSpellSeedNumGet extends SimpleExpression<Double> {
         if (seed == null) return null;
 
         Double[] doubles = new Double[1];
-        doubles[0] = seed.getNumProp(stringExpression.getSingle(event));
+        doubles[0] = seed.getNumProps(stringExpression.getSingle(event));
         return doubles;
     }
 

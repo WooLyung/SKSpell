@@ -12,6 +12,8 @@ public final class SKSpell extends JavaPlugin {
 
     private static SKSpell plugin;
     private SkriptAddon addon;
+    private SpellSeedManager ssManager;
+    private SpellThread spellThread;
 
     @Override
     public void onEnable() {
@@ -25,6 +27,19 @@ public final class SKSpell extends JavaPlugin {
         }
 
         getServer().getLogger().info("SKSpell 1.0.0 has been enabled.");
+
+        init();
+        startThread();
+    }
+
+    private void startThread() {
+        if (spellThread != null)
+            spellThread.start();
+    }
+
+    private void init() {
+        ssManager = new SpellSeedManager();
+        spellThread = new SpellThread();
     }
 
     @Override
@@ -47,5 +62,9 @@ public final class SKSpell extends JavaPlugin {
                 "%" + type + "%'[s] " + property
         };
         Skript.registerExpression(exprClass, returnClass, ExpressionType.PROPERTY, propPatterns);
+    }
+
+    public SpellSeedManager getSSManager() {
+        return ssManager;
     }
 }

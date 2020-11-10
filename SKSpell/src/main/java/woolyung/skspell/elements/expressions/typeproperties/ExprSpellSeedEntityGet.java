@@ -6,27 +6,29 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
+import org.bukkit.entity.Entity;
 import org.bukkit.event.Event;
+import org.bukkit.util.Vector;
 import woolyung.skspell.elements.types.SpellSeed;
 
-public class ExprSpellSeedStrGet extends SimpleExpression<String> {
+public class ExprSpellSeedEntityGet extends SimpleExpression<Entity> {
 
     static {
-        Skript.registerExpression(ExprSpellSeedStrGet.class, String.class, ExpressionType.COMBINED, "get str[ing] property %string% in %spell%");
+        Skript.registerExpression(ExprSpellSeedEntityGet.class, Entity.class, ExpressionType.COMBINED, "get entity property %string% in %spell%");
     }
 
     Expression<String> stringExpression;
     Expression<SpellSeed> spellSeedExpression;
 
     @Override
-    protected String[] get(Event event) {
+    protected Entity[] get(Event event) {
         SpellSeed seed = spellSeedExpression.getSingle(event);
 
         if (seed == null) return null;
 
-        String[] strings = new String[1];
-        strings[0] = seed.getStrProps(stringExpression.getSingle(event));
-        return strings;
+        Entity[] entities = new Entity[1];
+        entities[0] = seed.getEntityProps(stringExpression.getSingle(event));
+        return entities;
     }
 
     @Override
@@ -35,13 +37,13 @@ public class ExprSpellSeedStrGet extends SimpleExpression<String> {
     }
 
     @Override
-    public Class<? extends String> getReturnType() {
-        return String.class;
+    public Class<? extends Entity> getReturnType() {
+        return Entity.class;
     }
 
     @Override
     public String toString(Event event, boolean b) {
-        return "get string property in spell seed";
+        return "get entity property in spell seed";
     }
 
     @Override

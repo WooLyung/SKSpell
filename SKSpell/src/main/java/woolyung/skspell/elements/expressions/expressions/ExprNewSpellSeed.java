@@ -7,6 +7,7 @@ import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
 import org.bukkit.event.Event;
+import woolyung.skspell.SKSpell;
 import woolyung.skspell.elements.types.SpellSeed;
 
 public class ExprNewSpellSeed extends SimpleExpression<SpellSeed> {
@@ -18,7 +19,7 @@ public class ExprNewSpellSeed extends SimpleExpression<SpellSeed> {
     @Override
     protected SpellSeed[] get(Event event) {
         SpellSeed[] seed = new SpellSeed[1];
-        seed[0] = new SpellSeed();
+        seed[0] = SKSpell.getPlugin().getSSManager().createSpellSeed();
 
         return seed;
     }
