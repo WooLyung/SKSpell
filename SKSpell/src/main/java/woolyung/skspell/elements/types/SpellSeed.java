@@ -1,6 +1,5 @@
 package woolyung.skspell.elements.types;
 
-import ch.njol.util.VectorMath;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.util.Vector;
@@ -17,6 +16,8 @@ public class SpellSeed {
     private HashMap<String, String> strProps = new HashMap<>();
     private HashMap<String, Vector> vecProps = new HashMap<>();
     private HashMap<String, Entity> entityProps = new HashMap<>();
+    private HashMap<String, Location> locProps = new HashMap<>();
+    private HashMap<String, SpellSeed> spellProps = new HashMap<>();
     private double time = 0;
 
     public static String getDefaultName() {
@@ -93,6 +94,18 @@ public class SpellSeed {
         return null;
     }
 
+    public Location getLocProps(String key) {
+        if (locProps.containsKey(key))
+            return locProps.get(key);
+        return null;
+    }
+
+    public SpellSeed getSpellProps(String key) {
+        if (spellProps.containsKey(key))
+            return spellProps.get(key);
+        return null;
+    }
+
     public void setIntProps(String key, int value) {
         if (intProps.containsKey(key))
             intProps.remove(key);
@@ -123,6 +136,18 @@ public class SpellSeed {
         entityProps.put(key, value);
     }
 
+    public void setLocProps(String key, Location value) {
+        if (locProps.containsKey(key))
+            locProps.remove(key);
+        locProps.put(key, value);
+    }
+
+    public void setSpellProps(String key, SpellSeed value) {
+        if (spellProps.containsKey(key))
+            spellProps.remove(key);
+        spellProps.put(key, value);
+    }
+
     public void deleteIntProps(String key) {
         if (intProps.containsKey(key))
             intProps.remove(key);
@@ -146,5 +171,15 @@ public class SpellSeed {
     public void deleteEntityProps(String key) {
         if (entityProps.containsKey(key))
             entityProps.remove(key);
+    }
+
+    public void deleteLocProps(String key) {
+        if (locProps.containsKey(key))
+            locProps.remove(key);
+    }
+
+    public void deleteSpellProps(String key) {
+        if (spellProps.containsKey(key))
+            spellProps.remove(key);
     }
 }
