@@ -41,4 +41,8 @@ public class SpellSeedManager {
         }
         removes.clear();
     }
+
+    public boolean willDestroy(SpellSeed spellSeed) {
+        return removes.contains(spellSeed);
+    }
 }

@@ -16,9 +16,11 @@ public class SpellThread extends Thread {
                 Thread.sleep(50);
                 Bukkit.getScheduler().runTask(plugin, () -> {
                     for (SpellSeed spellSeed : plugin.getSSManager().getSpellSeeds()) {
-                        spellSeed.setTime(spellSeed.getTime() + 0.05);
-                        SpellUpdateEvent event = new SpellUpdateEvent(spellSeed);
-                        Bukkit.getPluginManager().callEvent(event);
+                        if (!plugin.getSSManager().willDestroy(spellSeed)) {
+                            spellSeed.setTime(spellSeed.getTime() + 0.05);
+                            SpellUpdateEvent event = new SpellUpdateEvent(spellSeed);
+                            Bukkit.getPluginManager().callEvent(event);
+                        }
                     }
                     plugin.getSSManager().removeSpellSeeds();
                     plugin.getSSManager().insertSpellSeeds();
