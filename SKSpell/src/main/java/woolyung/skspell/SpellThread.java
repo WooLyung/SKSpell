@@ -21,6 +21,7 @@ public class SpellThread extends Thread {
                         Bukkit.getPluginManager().callEvent(event);
                     }
                     plugin.getSSManager().removeSpellSeeds();
+                    plugin.getSSManager().insertSpellSeeds();
                 });
             } catch (Exception e) {
                 e.printStackTrace();
